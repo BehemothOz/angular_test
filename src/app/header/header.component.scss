@@ -1,0 +1,43 @@
+$white: #fff;
+
+.main-header {
+  position: relative;
+  background-color: #6d0e09;
+  background-image: linear-gradient(to bottom,rgb(164, 37, 25) 0%, rgb(87, 0, 0) 59.7%, rgb(47, 0, 0) 100%);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 38px;
+  line-height: 1.5;
+  color: $white;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .nav-link {
+    display: block;
+    padding: 25px 20px;
+    font-size: 18px;
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #212121;
+    }
+
+    &.active {
+      background-color: #212121;
+    }
+  }
+}

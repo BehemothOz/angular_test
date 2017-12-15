@@ -1,0 +1,40 @@
+.hero-item {
+  position: relative;
+  width: calc(1260px / 5);
+  height: 540px;
+  overflow: hidden;
+
+  .hero-img {
+    width: 100%;
+    transform: scale(1);
+    transition: 0.4s;
+  }
+
+  &:hover img {
+    transform: scale(1.04);
+  }
+
+  .hero-name {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: all 0.4s ease;
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      font-size: 26px;
+      color: #fff;
+      white-space: nowrap;
+      text-transform: uppercase;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &:hover .hero-name {
+    opacity: 1;
+  }
+}

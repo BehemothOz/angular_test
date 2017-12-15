@@ -1,0 +1,49 @@
+$white: #fff;
+$green: #00796b;
+$green-dk: #004c40;
+$green-lg: #48a999;
+
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  outline: 0;
+}
+
+html {
+  min-width: 1300px;
+}
+
+body {
+  min-width: 1300px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #f3f3f3;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 1280px;
+
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.no-active {
+  pointer-events: none;
+}
