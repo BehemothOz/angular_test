@@ -8,6 +8,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HomeComponent } from './home/home.component';
 import { HeroComponent } from './hero/hero.component';
+import { BecomeHeroComponent } from './become-hero/become-hero.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { HeroComponent } from './hero/hero.component';
     HeaderComponent,
     HeroesComponent,
     HomeComponent,
-    HeroComponent
+    HeroComponent,
+    BecomeHeroComponent
   ],
   imports: [
     BrowserModule,
